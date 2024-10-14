@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width:500px;
+            height:300px;
+            border:2px solid steelblue;
+        }
+        #box-1{
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        #box-2{
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        .elipsis{
+            width:300px;
+            border: 3px solid blue;
+            white-space: nowrap;
+            overflow: hidden;
+             text-overflow: ellipsis; 
+            /* text-overflow: clip; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="elipsis">I am a serious learner.I am investing at least 6-8hours every single day.No gap at all</p>
+    </header>
+    <!-- .box*2>h3{My Text Box $}+lorem20 -->
+    <div class="box" id="box-1">
+        <h3>My Text Box 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quos quia nisi placeat voluptatibus
+            laborum ipsum dolor, quibusdam iusto tenetur necessitatibus doloribus illum earum iste quas tempora nam eos
+            est, recusandae aut nesciunt sapiente. Deleniti expedita hic iste mollitia, voluptatem possimus cum? Saepe
+            aspernatur placeat tempore sit ipsum, voluptatum, voluptatibus tenetur dolorum ex accusamus ab! Vero nostrum
+            sed corrupti error qui soluta provident, velit dolor exercitationem reprehenderit et ipsam quas alias
+            excepturi atque modi nemo aspernatur illo blanditiis quod dolorum nesciunt a culpa sapiente! Provident,
+            quisquam! Debitis animi, itaque recusandae esse voluptatibus iure quas expedita eos blanditiis assumenda
+            atque iste ullam reprehenderit voluptatum rerum adipisci? Id similique quaerat praesentium quae debitis
+            maiores dicta saepe perspiciatis quibusdam tenetur laudantium illo accusantium quas esse sed doloremque, ea
+            dolore velit explicabo dolorem fugit numquam dignissimos at? Perspiciatis voluptatem facilis eaque voluptas,
+            assumenda aut eligendi nemo magni dicta qui ab saepe a vel repudiandae minus temporibus aliquid at. Nisi
+            beatae nesciunt tempora dicta veritatis laborum, architecto veniam temporibus qui consectetur obcaecati odio
+            consequatur modi facere eos reiciendis inventore distinctio tenetur mollitia aspernatur? Debitis excepturi
+            officia iste quam culpa ea consectetur? Sint reiciendis debitis eaque vero dolore, sed, quasi eos maiores
+            numquam unde expedita autem?</p>
+    </div>
+    <div class="box"id="box-2">
+        <h3>My Text Box 2</h3>
+        <p>Iste nostrum id ea voluptatibus sunt quam repudiandae consequuntur harum consectetur autem, facilis quae
+            corrupti nisi illum hic deserunt et dolore laborum quis earum. Deleniti magni a minima vel eius
+            reprehenderit, unde officiis aliquam necessitatibus. Magni eveniet provident iure ipsum porro distinctio
+            similique minus? Ea exercitationem qui beatae natus doloribus, error blanditiis, iusto incidunt quidem
+            aperiam itaque quisquam necessitatibus! Sequi iusto dolores qui error natus aliquid accusantium doloribus
+            quo ducimus mollitia minus consectetur modi, deserunt maxime earum provident possimus. Ipsum quaerat quia,
+            libero velit dolor exercitationem maxime vitae ipsam corrupti! Eum consectetur dolorum quisquam dolores
+            placeat aperiam earum vero numquam tenetur, accusantium obcaecati, delectus sequi quis et, iusto
+            necessitatibus voluptas reiciendis animi sapiente unde debitis cupiditate. Natus quae repellendus, pariatur
+            dolores qui totam reprehenderit alias eligendi inventore rerum numquam placeat sapiente, aliquam
+            consequuntur esse assumenda doloremque corporis tempore saepe consectetur? Maxime quod magnam suscipit
+            culpa, hic temporibus totam facere in, saepe eos sed vero. Perferendis qui expedita quod, dolor velit
+            cupiditate ducimus odio repudiandae nisi eaque explicabo voluptatibus ratione, assumenda necessitatibus,
+            fugiat iure nam dolores? Similique quidem vero quis eum fugit? Laborum sequi ab impedit dolorem quis iusto
+            blanditiis eum facere deserunt, quibusdam fugiat ut, doloremque dolorum minima quia eligendi!</p>
+    </div>
+</body>
+
+</html>
