@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --primary-color:steelblue;
+            --secondary-color:aqua;
+            --font-size:20px;
+        }
+        h1{
+            color:var(--primary-color);
+        }
+        h5{
+            background-color: var(--primary-color);
+        }
+        .box{
+            border:2px solid cornflowerblue;
+            width:calc(100% - 300px);
+        }
+        .box p{
+            color:coral;
+            font-size: var(--font-size);
+        }
+        .container{
+            border: 2px solid tomato;
+            display:grid;
+            gap: 20px;
+            /* grid-template-rows: 500px;
+             grid-template-columns: 200px calc(100% - 200px - 20px);  */
+            
+            /* grid-template-columns: 200px calc((100% - 200px - 40px) / 2) calc((100% - 200px - 40px) / 2); */
+            grid-template-columns: 200px calc((100% - 200px - 40px) / 2) ;
+             /* grid-auto-rows: minmax(100px, auto);  Automatically adjust row height  */
+            grid-auto-flow: column; 
+            
+        }
+        .sidebar{
+            background-color: lightgrey;
+        }
+        .content{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Custom properties</h1>
+    <h5>Also commonly known as CSS variable</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ab voluptate numquam molestiae enim
+            eaque quam sequi, natus ratione cupiditate repudiandae optio officiis facilis ipsam neque deleniti
+            laboriosam dignissimos recusandae animi ex earum quaerat vel temporibus porro? Nostrum, id illo!</p>
+    </div>
+    <div class="container">
+        <div class="sidebar"> Sidebar</div>
+        <div class="content">
+         Some content
+        </div>
+        <div class="content">
+            Some content
+           </div>
+    </div>
+</body>
+
+</html>

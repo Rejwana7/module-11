@@ -6,22 +6,45 @@
     <title>Document</title>
 </head>
 <style>
-    .box{
+    /* .box{
         width:200px; 
         height:200px;
         border:2px solid tomato;
         background-color: peru;
-        /* transition: margin-left 5s; */
-     /* transition: margin-left 4s ease-in-out 3s ,background-color 5s */
+        transition: margin-left 5s; 
+      transition: margin-left 4s ease-in-out 3s ,background-color 5s 
      transition: transform 7s 3s;
-    }
+    } */
     
-   .box:hover{
-    /* width:400px; */
-    /* margin-left: 50px;
-    background-color: brown; */
+   /* .box:hover{
+     width:400px; 
+ margin-left: 50px;
+    background-color: brown; 
     transform: rotate(45deg);
-   }
+   } */
+    .container{
+        background-color: bisque;
+        width: 50vw;
+        height:40vh;
+    }
+    .box{
+        background-color: aquamarine;
+        width:5vw;
+        height:4vh;
+
+
+    /* transition-property:transform; */
+    /* transition-property:all;
+    transition-duration: 3s;
+    transition-timing-function:ease-in-out ;
+    transition-delay:4s ; */
+    /* kotokkhon por colbe */
+    transition: all 3s ease-in-out 2s;
+    }
+    .translate{
+        transform: translateX(10vw) translateY(10vh) scale(3);
+        background-color: brown;
+    }
 </style>
 <body>
     <ul>
@@ -29,8 +52,11 @@
         <li>Translate: It is a value of the transform style rule.This means you move either x or y or both axis</li>
         <li>Transition: How long take to do the change of the shape</li>
     </ul>
-    <div class="box">Box 1</div>
+    <!-- <div class="box">Box 1</div>
     <div class="box">Box 2</div>
-    <div class="box">Box 3</div>
+    <div class="box">Box 3</div> -->
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
 </body>
 </html>
